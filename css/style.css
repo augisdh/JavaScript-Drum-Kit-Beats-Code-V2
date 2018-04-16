@@ -1,0 +1,89 @@
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../bodyImages/originalX.gif) no-repeat center fixed;
+    background-size: 100%;
+}
+
+.mainCtx {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.mainCtx h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 56px;
+    color: #f2f2f2;
+    text-shadow: 0 0 5px black;
+}
+
+@media (max-width: 600px){
+    .mainCtx h1 {
+        font-size: 30px;
+    }
+
+    body {
+        background-size: 150%;
+    }
+}
+
+.ctxKeys {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.ctxKeys .key {
+    margin: 10px;
+    padding: 10px;
+    width: 130px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.1s;
+}
+
+.ctxKeys .playing {
+    transform: scale(1.125);
+    border-color: #ffc600;
+    color: #ffc600;
+}
+
+.ctxKeys .key kbd {
+    display: block;
+    padding: 5px;
+    font-size: 40px;
+}
+
+@media (max-width: 500px){
+    .ctxKeys .key {
+        margin: 5px;
+        padding: 5px;
+        width: 70px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    .ctxKeys .key kbd {
+        display: block;
+        padding: 5px;
+        font-size: 20px;
+    }
+}

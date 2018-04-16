@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Drum Kit V2</title>
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="shortcut icon" href="bodyImages/beatIcon.ico">
+        </head>
+    </head>
+    <body>
+
+        <main class="mainCtx">
+            <header>
+                <h1 class="text-center mt-5">JavaScript Drum Kit Beats V2</h1>
+            </header>
+
+            <div class="container mt-5 mb-3">
+                <div class="ctxKeys">
+                    <div data-key="65" class="key">
+                        <kbd>A</kbd>
+                        <span class="soundName">CLAP</span>
+                    </div>
+                    <div data-key="83" class="key">
+                        <kbd>S</kbd>
+                        <span class="soundName">HAND'CLAP</span>
+                    </div>
+                    <div data-key="68" class="key">
+                        <kbd>D</kbd>
+                        <span class="soundName">CLAVES</span>
+                    </div>
+                    <div data-key="70" class="key">
+                        <kbd>F</kbd>
+                        <span class="soundName">CONGA</span>
+                    </div>
+                    <div data-key="71" class="key">
+                        <kbd>G</kbd>
+                        <span class="soundName">COWBELL</span>
+                    </div>
+                    <div data-key="72" class="key">
+                        <kbd>H</kbd>
+                        <span class="soundName">CRASH</span>
+                    </div>
+                    <div data-key="74" class="key">
+                        <kbd>J</kbd>
+                        <span class="soundName">TOM</span>
+                    </div>
+                    <div data-key="75" class="key">
+                        <kbd>K</kbd>
+                        <span class="soundName">HIGH'TOM</span>
+                    </div>
+                    <div data-key="76" class="key">
+                        <kbd>L</kbd>
+                        <span class="soundName">HIHAT</span>
+                    </div>
+                    <div data-key="90" class="key">
+                        <kbd>Z</kbd>
+                        <span class="soundName">HORN</span>
+                    </div>
+                    <div data-key="88" class="key">
+                        <kbd>X</kbd>
+                        <span class="soundName">KICK</span>
+                    </div>
+                    <div data-key="67" class="key">
+                        <kbd>C</kbd>
+                        <span class="soundName">OPEN'HIHAT</span>
+                    </div>
+                    <div data-key="86" class="key">
+                        <kbd>V</kbd>
+                        <span class="soundName">SHIFTER</span>
+                    </div>
+                    <div data-key="66" class="key">
+                        <kbd>B</kbd>
+                        <span class="soundName">SNARE</span>
+                    </div>
+                    <div data-key="78" class="key">
+                        <kbd>N</kbd>
+                        <span class="soundName">SYNTH</span>
+                    </div>
+                    <div data-key="77" class="key">
+                        <kbd>M</kbd>
+                        <span class="soundName">VOCALS</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <audio data-key="65" src="sounds/clap.mp3" type="audio/mpeg"></audio>
+        <audio data-key="83" src="sounds/handClap.mp3" type="audio/mpeg"></audio>
+        <audio data-key="68" src="sounds/claves.mp3" type="audio/mpeg"></audio>
+        <audio data-key="70" src="sounds/conga.mp3" type="audio/mpeg"></audio>
+        <audio data-key="71" src="sounds/cowBell.mp3" type="audio/mpeg"></audio>
+        <audio data-key="72" src="sounds/crash.mp3" type="audio/mpeg"></audio>
+        <audio data-key="74" src="sounds/tom.mp3" type="audio/mpeg"></audio>
+        <audio data-key="75" src="sounds/highTom.mp3" type="audio/mpeg"></audio>
+        <audio data-key="76" src="sounds/hiHat.mp3" type="audio/mpeg"></audio>
+        <audio data-key="90" src="sounds/horn.mp3" type="audio/mpeg"></audio>
+        <audio data-key="88" src="sounds/kick.mp3" type="audio/mpeg"></audio>
+        <audio data-key="67" src="sounds/openHiHat.mp3" type="audio/mpeg"></audio>
+        <audio data-key="86" src="sounds/shifter.mp3" type="audio/mpeg"></audio>
+        <audio data-key="66" src="sounds/snare.mp3" type="audio/mpeg"></audio>
+        <audio data-key="78" src="sounds/synth.mp3" type="audio/mpeg"></audio>
+        <audio data-key="77" src="sounds/vocals.mp3" type="audio/mpeg"></audio>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
